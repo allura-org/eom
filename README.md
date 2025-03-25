@@ -111,6 +111,10 @@ Built with Litestar, the API in `rest.py` offers a user-friendly interface to in
 - This API is intended for controlling EdgeOMatic devices on a secure, private network.
 - Always ensure proper device cleaning and maintenance according to the manufacturer's instructions.
 
+## Known Issues
+- Sometimes the device's display will freeze while the server is running. Sending a Restart request usually works to solve this. It's unknown as of yet whether the device continues to function while the display is frozen.
+- On repeated starts and stops of the server, the device will simply stop accepting connections. The cause is as of yet unknown but we suspect limitations with the ESP32 radio. If this occurs, unplug the device, plug it back in, and wait a few minutes; it will initially fail to connect to WiFi but this will resolve itself.
+
 ---
 
 *This project is not affiliated with EdgeOMatic's manufacturer and is provided as-is without warranty.*
