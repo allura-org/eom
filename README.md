@@ -28,6 +28,10 @@ uv pip install msgspec websocket-client litestar granian
 granian rest:app --interface asgi
 ```
 
+## Known Issues
+- Sometimes the device's display will freeze, not responding to button presses, while the server is running. Sending a Restart request usually works to solve this. It's unknown as of yet whether the device continues to function while the display is frozen.
+- On repeated starts and stops of the server, the device will simply stop accepting connections. The cause is as of yet unknown but we suspect limitations with the ESP32 radio. If this occurs, unplug the device, plug it back in, and wait a few minutes; it will initially fail to connect to WiFi but this will resolve itself.
+
 ## 🚀 Quick Start
 
 1. Configure your EdgeOMatic device IP and port in `rest.py`:
