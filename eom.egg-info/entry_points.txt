@@ -1,0 +1,2 @@
+[console_scripts]
+eom = eom_app.cli:main

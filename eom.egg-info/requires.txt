@@ -1,0 +1,5 @@
+litestar
+granian
+msgspec
+websocket-client
+pyyaml

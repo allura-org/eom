@@ -8,7 +8,11 @@ dependencies = [
     "granian",
     "msgspec",
     "websocket-client",
+    "uvicorn",
 ]
+
+[project.scripts]
+eom-server = "cli:main"
 
 [build-system]
 requires = ["hatchling"]

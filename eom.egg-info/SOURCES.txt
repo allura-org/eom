@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+eom.egg-info/PKG-INFO
+eom.egg-info/SOURCES.txt
+eom.egg-info/dependency_links.txt
+eom.egg-info/entry_points.txt
+eom.egg-info/requires.txt
+eom.egg-info/top_level.txt
+eom_app/__init__.py
+eom_app/api.py
+eom_app/cli.py
+eom_app/client.py
