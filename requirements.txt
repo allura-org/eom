@@ -1,0 +1,4 @@
+litestar
+granian
+msgspec
+websocket-client
